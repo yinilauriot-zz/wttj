@@ -1,0 +1,75 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+//Give size with px
+@mixin font-size($size) {
+  font-size: calculateRem($size);
+}
+
+//Flexbox styles
+@mixin flexbox-container($direction: row, $wrap: wrap, $justify-content: flex-start, $align-items: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+//svg width height
+@mixin svg-size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+//hover animation
+@mixin hoverImage($color, $width, $height) {
+  content: "";
+  display: block;
+  background: $color;
+  width: $width;
+  height: $height;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  visibility: hidden;
+  transition: all $transition-duration $transition-function;
+  pointer-events: none;
+}
+
+//Image scale
+@mixin scaleImage($scale) {
+  transform: scale($scale);
+}
+
+//media queries
+@mixin media($point) {
+    @if $point == mobileOnly {
+        @media (max-width: 767px) {
+            @content;
+        }
+    } @else if $point == fromTabletPortrait {
+        @media (min-width: 768px) {
+            @content;
+        }
+    } @else if $point == tabletLandscape {
+        @media (min-width: 768px) and (max-width: 1024px) {
+            @content;
+        }
+    } @else if $point == fromSmallDesktop {
+        @media (min-width: 1025px) {
+            @content;
+        }
+    } @else if $point == mediumDesktop {
+        @media (min-width: 1025px) and (max-width: 1260px) {
+            @content;
+        }
+    } @else if $point == fromMediumDesktop {
+        @media (min-width: 1261px) {
+            @content;
+        }
+    }
+}

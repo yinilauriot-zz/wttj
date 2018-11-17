@@ -1,0 +1,47 @@
+// Container
+$container: 1260px;
+// Value for padding col- and row
+$value-1: 15px;
+
+//Fonts
+$font-sansserif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+
+$font-serif: Times, Georgia, serif;
+
+// Font Sizes
+$base-font-size: 16px;
+
+// Line height
+$base-line-height: 1.4;
+$heading-line-height: 1.2;
+
+//Colors
+$maincolor: #fff;
+$textcolor: #f4f4f4;
+$transparent: rgba(0, 0, 0, 0);
+$bgcolor: #31333B;
+$bglightcolor: rgba(255,255,255, 0.15);
+
+$green: #00c2ca;
+$white: #fff;
+$black: #000;
+
+$color-1: #9a9da6;
+$color-2: #ccc;
+
+//Breakpoint
+$tablet-medium: 768px;
+$desktop-small: 1024px;
+$desktop-medium: 1260px;
+
+//Transition
+$transition-duration: 0.3s;
+$transition-function: cubic-bezier(0.41, 0.094, 0.54, 0.07);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: (
+25: 25%,
+50: 50%,
+75: 75%,
+100: 100%
+)

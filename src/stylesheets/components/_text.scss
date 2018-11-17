@@ -1,0 +1,82 @@
+@import "_variables";
+@import "_mixin";
+
+body {
+  @include font-size($base-font-size);
+  line-height: $base-line-height;
+  font-family: $font-sansserif;
+  color: $maincolor;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: $maincolor;
+  text-decoration: none;
+
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Headings
+----------------------------------------------------------------------------------------------------*/
+
+/* Lists
+----------------------------------------------------------------------------------------------------*/
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+
+  ol,
+  ul {
+    padding: 0 0 0 20px;
+  }
+}
+
+li {
+  margin: 0;
+}
+
+/* Spacing
+----------------------------------------------------------------------------------------------------*/
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin: 0;
+}
+
+/* text
+----------------------------------------------------------------------------------------------------*/
+p {
+  @include font-size(14px);
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
