@@ -1,0 +1,13 @@
+/* Footer Styles */
+.footer__container {
+  @include flexbox-container(row, wrap, space-between, center);
+  padding: 0.4rem;
+  img {
+    width: 3rem;
+  }
+}
+
+.footer__text {
+  @include font-size(14px);
+  margin-right: 0.6rem;
+}

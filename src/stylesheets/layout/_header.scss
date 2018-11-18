@@ -1,0 +1,16 @@
+/* Header Styles */
+.header__logo {
+  margin-bottom: 0;
+  @include font-size(16px);
+  padding: 5px;
+}
+
+.header__logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__logo-link img {
+  width: 3rem;
+  margin-right: 0.6rem;
+}

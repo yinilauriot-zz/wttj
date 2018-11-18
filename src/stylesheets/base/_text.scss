@@ -24,6 +24,30 @@ img {
 
 /* Headings
 ----------------------------------------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+$headings: (
+h1: 40,
+h2: 32,
+h3: 28,
+h4: 24,
+h5: 20,
+h6: 16
+);
+
+@each $heading-name, $heading-font-size in $headings {
+  #{$heading-name}, .#{$heading-name} {
+    font-size: $heading-font-size + px;
+    line-height: $heading-line-height;
+  }
+}
 
 /* Lists
 ----------------------------------------------------------------------------------------------------*/
@@ -69,14 +93,38 @@ p {
   @include font-size(14px);
 }
 
-.text-uppercase {
-  text-transform: uppercase;
-}
-
-.text-center {
-  text-align: center;
+strong {
+  font-weight: normal;
 }
 
 .text-bold {
   font-weight: bold;
+}
+
+.text {
+  $text: (
+  left: left,
+  center: center,
+  right: right,
+  );
+
+  @each $text-name, $text-style in $text {
+    &-#{$text-name} {
+      text-align: $text-style !important;
+    }
+  }
+}
+
+.text {
+  $text: (
+  lowercase: lowercase,
+  uppercase: uppercase,
+  capitalize: capitalize,
+  );
+
+  @each $text-name, $text-style in $text {
+    &-#{$text-name} {
+      text-transform: $text-style !important;
+    }
+  }
 }

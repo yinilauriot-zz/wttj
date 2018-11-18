@@ -1,5 +1,8 @@
-@import "./components/_normalize";
-@import "./components/_text";
-@import "./components/_utility";
+@import "./base/_normalize";
+@import "./base/_text";
+@import "./base/_utility";
 @import "./plugins/swiper.min";
+@import "./base/_modal-video";
+@import "./layout/_header";
+@import "./layout/_footer";
 @import "./pages/_widget";
