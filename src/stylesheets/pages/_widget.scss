@@ -140,7 +140,7 @@ h2 {
 }
 
 /* Blockquote Styles */
-blockquote {
+.quote__container {
   @include flexbox-container(column, wrap, center, center);
   svg {
     fill: $bglightcolor;
