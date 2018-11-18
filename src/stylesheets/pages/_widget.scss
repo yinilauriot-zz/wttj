@@ -1,5 +1,5 @@
-header, main, footer {
-  background-color: $bgcolor;
+.main__content {
+  background-color: $mediumgrey;
 }
 
 /* Swiper Styles */
@@ -30,7 +30,7 @@ header, main, footer {
 .swiper-button-prev,
 .swiper-button-next {
   background-image: none;
-  background-color: $bglightcolor;
+  background-color: rgba(255,255,255, 0.15);
   @include svg-size(2.2rem, 2.2rem);
   border-radius: 50%;
   @include flexbox-container(row, wrap, center, center);
@@ -101,7 +101,7 @@ header, main, footer {
     }
     .button-play:after {
       visibility: visible;
-      opacity: 0.2;
+      opacity: 0.3;
     }
   }
 }
@@ -143,11 +143,15 @@ h2 {
 .quote__container {
   @include flexbox-container(column, wrap, center, center);
   svg {
-    fill: $bglightcolor;
+    fill: rgba(255,255,255, 0.15);
     transform: rotate(180deg);
     @include svg-size(3.4rem, 3.4rem);
   }
-  strong {
-    @include font-size(24px);
+}
+
+.quote__text {
+  @include font-size(24px);
+  @include media(tabletLandscape) {
+    @include font-size(18px);
   }
 }
