@@ -1,24 +1,24 @@
 # WTTJ Widget
 
 Gestioin des tâches - Webpack
-Pour commencer le projet, j'ai installé le webpack. J'ai passé beaucoup de temps sur la configuration du fichier webpack.config.js pour résoudre le problème que j'ai rencontré notament sur babel.
+- Pour commencer le projet, j'ai installé le webpack. J'ai passé beaucoup de temps sur la configuration du fichier webpack.config.js pour résoudre le problème que j'ai rencontré notament sur babel.
 
 Gestioin des sliders - Swiper
-[Swiper](https://idangero.us/swiper/) est un slider tactile moderne et gratuit sans avoir JS librairie. Je l'ai choisi pour intégrer dans ce projet parce que je l'ai déjà utilisé sur mon dernier projet et je sais qu'il est facile de configurer les nombres/positions de sliders, pagination, navigation et etc.
+- [Swiper](https://idangero.us/swiper/) est un slider tactile moderne et gratuit sans avoir JS librairie. Je l'ai choisi pour intégrer dans ce projet parce que je l'ai déjà utilisé sur mon dernier projet et je sais qu'il est facile de configurer les nombres/positions de sliders, pagination, navigation et etc.
 
 Accessibilité
-Pour avoir plus d'accessibilité, j'ai utilisé les astuces suivants :
+- Pour avoir plus d'accessibilité, j'ai utilisé les astuces suivants :
   - les balises sémantiques HTML5 comme header, main, footer, blockquote, figure, figcaption
   - les attributs comme role, aria-label et aria-hidden
   - l'attribut alt dans la balise img
 
 SEO
-J'ai également mis en place les microdata dans HTML5 qui pourront être lues, récupérées et traitées par des logiciels ou des applicatifs Web de façon automatique afin de proposer aux Internautes des résultats de recherche plus pertinents.
+- J'ai également mis en place les microdata dans HTML5 qui pourront être lues, récupérées et traitées par des logiciels ou des applicatifs Web de façon automatique afin de proposer aux Internautes des résultats de recherche plus pertinents.
 
 CSS
-J'ai utilisé la méthodologie BEM(bloc, element, modifier) pour éviter les cascades dans les sélecteurs CSS, réduire les risques de conflits de nommage. Cette méthode est extrêment modulaire, réutilisable et extensible.
+- J'ai utilisé la méthodologie BEM(bloc, element, modifier) pour éviter les cascades dans les sélecteurs CSS, réduire les risques de conflits de nommage. Cette méthode est extrêment modulaire, réutilisable et extensible.
 
-Au niveau de l'organisation des fichiers CSS :
+- Au niveau de l'organisation des fichiers CSS :
   - tous les CSS commons(ex: variable, mixin, normalize...) sont dans le folder `<base>`
   - les CSS des plugins sont dans le folder `<plugins>`
   - les blocs commons(ex: header, footer) sont dans le folder `<layout>`
