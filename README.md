@@ -1,7 +1,7 @@
 # WTTJ Widget
 
 Gestioin des tâches - Webpack
-- Pour commencer le projet, j'ai installé le webpack. J'ai passé beaucoup de temps sur la configuration du fichier webpack.config.js pour résoudre leq problèmeq que j'ai rencontré notament sur babel.
+- Pour commencer le projet, j'ai installé le webpack. J'ai passé beaucoup de temps sur la configuration du fichier webpack.config.js pour résoudre les problèmes que j'ai rencontré notament sur babel.
 
 Gestioin des sliders - Swiper
 - [Swiper](https://idangero.us/swiper/) est un slider tactile moderne et gratuit sans avoir JS librairie. Je l'ai choisi pour intégrer dans ce projet parce que je l'ai déjà utilisé sur mon dernier projet et je sais qu'il est facile de configurer le nombre ou la position des sliders, pagination, navigation et etc.
