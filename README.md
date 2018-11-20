@@ -27,4 +27,4 @@ CSS
 Les points à améliorer
   - faire le swiper en [react-slick](https://github.com/akiran/react-slick)
   - générer les icons en fonts via [icomoon](http://moon.io/app/) et les gérer via [svg-sprite-loader](https://github.com/kisenka/svg-sprite-loader/blob/master/README.md). L'avantage est que les icons peuvent être facielemnt personnalisés et le poid des icons en fonts est très léger.
-  - si les images ou posters sont lourds en poid, c'est mieux de les intégrer via balises `picture` <source> qui sont faites pour gérer les images en fonction de la taille de l'écran.
+  - si les images ou posters sont lourds en poid, c'est mieux de les intégrer via balises `picture`, `source` qui sont faites pour gérer les images en fonction de la taille de l'écran.
